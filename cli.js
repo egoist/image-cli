@@ -10,16 +10,17 @@ updateNotifier({pkg: pkg}).notify();
 
 var cli = meow([
   'Usage',
-  '  $ image-cli [input]',
+  '  $ image-cli [path to image]',
   '',
   'Options',
-  '  --foo  Lorem ipsum. [Default: false]',
+  '  --version      Print version',
+  '  --help         Print docs',
   '',
-  'Examples',
-  '  $ image-cli',
-  '  unicorns & rainbows',
-  '  $ image-cli ponies',
-  '  ponies & rainbows'
 ]);
+
+if (cli.flags.v || cli.flags.version) {
+  console.log(pkg.name.cyan, '~', pkg.version.magenta)
+  process.exit()
+}
 
 imageCli(cli.input, cli.flags);
