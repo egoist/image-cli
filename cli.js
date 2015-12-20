@@ -15,12 +15,12 @@ var cli = meow([
   'Options',
   '  --version      Print version',
   '  --help         Print docs',
-  '',
+  ''
 ]);
 
 if (cli.flags.v || cli.flags.version) {
-  console.log(pkg.name.cyan, '~', pkg.version.magenta)
-  process.exit()
+  console.log(pkg.name.cyan, '~', pkg.version.magenta);
+  process.exit();
 }
 
 imageCli(cli.input, cli.flags);
