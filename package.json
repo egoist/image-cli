@@ -1,7 +1,7 @@
 {
   "name": "image-cli",
-  "version": "0.0.0",
-  "description": "My riveting module",
+  "version": "0.0.1",
+  "description": "Uploading local or remote images from Cli to store in Cloud.",
   "license": "MIT",
   "repository": "egoist/image-cli",
   "author": {

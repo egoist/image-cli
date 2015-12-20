@@ -13,7 +13,7 @@ npm install -g image-cli
 ```bash
 $ image a.jpg
 $ image [Drag and Drop an image here from your file system]
-$ image http://remote/path/to/image
+$ image http://remote/path/to/image # TODO
 ```
 
 ## License
