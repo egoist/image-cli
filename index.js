@@ -8,14 +8,16 @@ module.exports = function (_, opts) {
   var url = _[0];
 
   if (typeof url !== 'string' || !url) {
-    return log.error('Expected a string'.red);
+    return log.error('Expected a string');
   }
 
   post(url)
     .then(function (data) {
       log.success('Ctrl + Click ' + data.url.cyan + ' to visit...');
       clip(data.url, function (err) {
-        if (err) throw err;
+        if (err) {
+          throw err;
+        }
         log.info('The URL is also in your clipboard now! Paste it in address bar to visit...');
       });
     })

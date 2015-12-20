@@ -5,16 +5,16 @@ var path = require('path');
 var spin = require('io-spin');
 var Promise = require('pinkie-promise');
 
-module.exports = function post (url) {
+module.exports = function post(url) {
   spin.start('Uploading:', 'Box1');
   var file = fs.createReadStream(path.resolve(url));
   var formData = {
-    smfile: file,
+    smfile: file
   };
   return new Promise(function (resolve, reject) {
     request.post({
       url: 'https://sm.ms/api/upload',
-      formData: formData,
+      formData: formData
     }, function (err, http, body) {
       spin.destroy();
       if (err) {

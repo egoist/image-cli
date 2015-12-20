@@ -43,6 +43,7 @@
   "xo": {
     "ignores": [
       "test.js"
-    ]
+    ],
+    "space": true
   }
 }
