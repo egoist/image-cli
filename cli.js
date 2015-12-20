@@ -3,7 +3,10 @@
 'use strict';
 require('colorful').toxic();
 var meow = require('meow');
+var updateNotifier = require('update-notifier');
+var pkg = require('./package');
 var imageCli = require('./');
+updateNotifier({pkg: pkg}).notify();
 
 var cli = meow([
   'Usage',

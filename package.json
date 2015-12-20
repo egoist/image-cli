@@ -34,7 +34,8 @@
     "meow": "^3.6.0",
     "pinkie-promise": "^2.0.0",
     "request": "^2.67.0",
-    "typelog": "^0.1.2"
+    "typelog": "^0.1.2",
+    "update-notifier": "^0.6.0"
   },
   "devDependencies": {
     "ava": "^0.8.0",
