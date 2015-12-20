@@ -2,6 +2,8 @@
 
 Uploading local or remote images from Cli to store in Cloud.
 
+![preview](http://ww4.sinaimg.cn/large/a15b4afegw1ez61j8bf0vg211g0ib7iu.gif)
+
 ## Installtion
 
 ```bash

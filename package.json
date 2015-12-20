@@ -1,6 +1,6 @@
 {
   "name": "image-cli",
-  "version": "0.0.11",
+  "version": "0.0.2",
   "description": "Uploading local or remote images from Cli to store in Cloud.",
   "license": "MIT",
   "repository": "egoist/image-cli",
@@ -30,6 +30,7 @@
   "dependencies": {
     "cliparoo": "^1.1.1",
     "colorful": "^2.1.0",
+    "configstore": "^1.4.0",
     "io-spin": "^0.1.2",
     "meow": "^3.6.0",
     "pinkie-promise": "^2.0.0",
