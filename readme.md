@@ -2,7 +2,7 @@
 
 Uploading local or remote images from Cli to store in Cloud.
 
-![preview](http://ww4.sinaimg.cn/large/a15b4afegw1ez61j8bf0vg211g0ib7iu.gif)
+![preview](https://ooo.0o0.ooo/2016/03/13/56e57b6b4c34a.gif)
 
 ## Installtion
 
