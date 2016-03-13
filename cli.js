@@ -1,24 +1,29 @@
 #!/usr/bin/env node
-
 'use strict';
 require('colorful').toxic();
-var meow = require('meow');
-var updateNotifier = require('update-notifier');
-var pkg = require('./package');
-var imageCli = require('./');
-updateNotifier({pkg: pkg}).notify();
+const meow = require('meow');
+const updateNotifier = require('update-notifier');
+const pkg = require('./package');
+const imageCli = require('./');
+updateNotifier({pkg}).notify();
 
-var cli = meow([
-  'Usage',
-  '  $ image-cli [path to image]',
+const cli = meow([
+  'Usage:'.bold,
+  '',
+  '  $ image <path to image>',
   '',
   'Options',
-  '  --version      Print version',
-  '  --help         Print docs',
+  '  -v/--version      Print version',
+  '  -h/--help         Print docs',
   ''
-]);
+], {
+  alias: {
+    v: 'version',
+    h: 'help'
+  }
+});
 
-if (cli.flags.v || cli.flags.version) {
+if (cli.flags.version) {
   console.log(pkg.name.cyan, '~', pkg.version.magenta);
   process.exit();
 }
