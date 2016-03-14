@@ -29,11 +29,13 @@
     "co": "^4.6.0",
     "colorful": "^2.1.0",
     "configstore": "^1.4.0",
+    "form-data": "^1.0.0-rc3",
+    "got": "^6.2.0",
     "io-spin": "^0.2.2",
+    "is-url": "^1.2.1",
     "meow": "^3.6.0",
     "pify": "^2.3.0",
-    "pinkie-promise": "^2.0.0",
-    "request": "^2.67.0",
+    "tempfile": "^1.1.1",
     "term-img": "^0.1.2",
     "update-notifier": "^0.6.0"
   },
@@ -44,6 +46,7 @@
     "ignores": [
       "test.js"
     ],
-    "space": true
+    "space": true,
+    "globals": ["cli"]
   }
 }

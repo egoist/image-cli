@@ -7,19 +7,21 @@ const pkg = require('./package');
 const imageCli = require('./');
 updateNotifier({pkg}).notify();
 
-const cli = meow([
+global.cli = meow([
   'Usage:'.bold,
   '',
   '  $ image <path to image>',
   '',
   'Options',
+  '  -e/--ext          Extenstion name for downloaded remote image',
   '  -v/--version      Print version',
   '  -h/--help         Print docs',
   ''
 ], {
   alias: {
     v: 'version',
-    h: 'help'
+    h: 'help',
+    e: 'ext'
   }
 });
 
@@ -28,4 +30,4 @@ if (cli.flags.version) {
   process.exit();
 }
 
-imageCli(cli);
+imageCli();

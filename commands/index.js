@@ -1,29 +1,21 @@
 'use strict';
 const co = require('co');
 const clip = require('cliparoo');
-const imgcat = require('term-img');
 const pify = require('pify');
 const boxen = require('boxen');
-const post = require('../post');
-const history = require('../history');
+const post = require('../lib/post');
+const history = require('../lib/history');
 
-module.exports = co.wrap(function* (filePath) {
+const main = co.wrap(function* (filePath) {
   if (typeof filePath !== 'string' || !filePath) {
     return console.log(`Expected a string`.red);
-  }
-
-  // get image base64 and encoded data to print in iTerm
-  try {
-    yield imgcat(filePath);
-  } catch (_) {
-    // do nothing
   }
 
   // the data to be logged
   let result = [];
 
   const data = yield post(filePath);
-  const url = ensureHttps(data.url);
+  const url = data.url;
 
   // print image info after success
   result.push(url.cyan);
@@ -40,10 +32,10 @@ module.exports = co.wrap(function* (filePath) {
     process.exit(1);
   }
 
+  result.push(`To delete, click ${data.delete.red}`);
+
   // print result in box
   console.log(boxen(result.join('\n'), {borderStyle: 'classic', padding: 1}));
 });
 
-function ensureHttps(url) {
-  return url.replace(/^http/, 'https');
-}
+module.exports = main;
