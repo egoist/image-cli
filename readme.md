@@ -4,10 +4,10 @@ Uploading local or remote images from Cli to store in Cloud.
 
 ![preview](https://ooo.0o0.ooo/2016/03/13/56e57b6b4c34a.gif)
 
-## Installtion
+## Install
 
 ```bash
-npm install -g image-cli
+$ npm install -g image-cli
 ```
 
 ## Example
