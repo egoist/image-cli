@@ -1,8 +1,8 @@
 # image-cli [![npm](https://img.shields.io/npm/v/image-cli.svg)](https://www.npmjs.com/package/image-cli) [![Build Status](https://travis-ci.org/egoist/image-cli.svg?branch=master)](https://travis-ci.org/egoist/image-cli)
 
-Uploading local or remote images from Cli to store in Cloud.
+8MB GIF Preview 😅
 
-![preview](https://ooo.0o0.ooo/2016/03/13/56e57b6b4c34a.gif)
+![preview](http://ww4.sinaimg.cn/large/a15b4afegw1f1ws1vl1h9g20v70i07wo.gif)
 
 ## Install
 
