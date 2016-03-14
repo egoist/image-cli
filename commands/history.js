@@ -1,5 +1,5 @@
 'use strict';
-const history = require('../history');
+const history = require('../lib/history');
 
 module.exports = function () {
   const images = history.get();
