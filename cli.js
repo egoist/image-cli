@@ -28,4 +28,4 @@ if (cli.flags.version) {
   process.exit();
 }
 
-imageCli(cli.input, cli.flags);
+imageCli(cli);
