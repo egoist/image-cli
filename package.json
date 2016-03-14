@@ -1,6 +1,6 @@
 {
   "name": "image-cli",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Uploading local or remote images from Cli to store in Cloud.",
   "license": "MIT",
   "repository": "egoist/image-cli",
