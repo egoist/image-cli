@@ -14,8 +14,14 @@ $ npm install -g image-cli
 
 ```bash
 $ image a.jpg
+
 $ image [Drag and Drop an image here from your file system]
-$ image http://remote/path/to/image # TODO
+
+$ image http://remote/path/to/image.jpg
+
+# if a given image url is not ended with .xxx but something like .xxx:large
+# you can specific the extension you actually need using `-e/--ext`:
+$ image http://path/to/a.jpg/large -e .jpg
 ```
 
 ## License
