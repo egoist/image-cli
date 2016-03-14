@@ -1,4 +1,4 @@
-# image-cli [![Build Status](https://travis-ci.org/egoist/image-cli.svg?branch=master)](https://travis-ci.org/egoist/image-cli)
+# image-cli [![npm](https://img.shields.io/npm/v/image-cli.svg)](https://www.npmjs.com/package/image-cli) [![Build Status](https://travis-ci.org/egoist/image-cli.svg?branch=master)](https://travis-ci.org/egoist/image-cli)
 
 Uploading local or remote images from Cli to store in Cloud.
 
