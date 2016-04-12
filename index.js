@@ -8,7 +8,7 @@ module.exports = function () {
     case 'history':
       return history();
     default:
-      return defaultRoute(route).catch(e => {
+      return defaultRoute(route, cli).catch(e => {
         console.log(e.stack);
         process.exit(1);
       });

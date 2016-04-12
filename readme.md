@@ -22,6 +22,12 @@ $ image http://remote/path/to/image.jpg
 # if a given image url is not ended with .xxx but something like .xxx:large
 # you can specific the extension you actually need using `-e/--ext`:
 $ image http://path/to/a.jpg/large -e .jpg
+
+# use proxy to download images behide firewall
+# for example you are using lantern to bypass firewall
+$ image http://blocked-website.com/xxx.jpg -p localhost:8787
+# or system proxy, http_proxy or https_proxy
+$ http_proxy=localhost:8787 image http://blocked-website.com/xxx.jpg
 ```
 
 ## License

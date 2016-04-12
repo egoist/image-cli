@@ -6,7 +6,7 @@ const boxen = require('boxen');
 const post = require('../lib/post');
 const history = require('../lib/history');
 
-const main = co.wrap(function* (filePath) {
+const main = co.wrap(function* (filePath, cli) {
   if (typeof filePath !== 'string' || !filePath) {
     return console.log(`Expected a string`.red);
   }
@@ -14,7 +14,7 @@ const main = co.wrap(function* (filePath) {
   // the data to be logged
   let result = [];
 
-  const data = yield post(filePath);
+  const data = yield post(filePath, cli);
   const url = data.url;
 
   // print image info after success

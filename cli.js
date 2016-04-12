@@ -13,6 +13,7 @@ global.cli = meow([
   '  $ image <path to image>',
   '',
   'Options',
+  '  -p/--proxy        Download image via proxy host, system http_proxy by default',
   '  -e/--ext          Extenstion name for downloaded remote image',
   '  -v/--version      Print version',
   '  -h/--help         Print docs',
@@ -21,7 +22,8 @@ global.cli = meow([
   alias: {
     v: 'version',
     h: 'help',
-    e: 'ext'
+    e: 'ext',
+    p: 'proxy'
   }
 });
 
